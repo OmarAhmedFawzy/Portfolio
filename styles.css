@@ -1,27 +1,45 @@
 html{
-    background-color: #11263d;
+    background-color: #07111c;
     color: aliceblue;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    display: flex;
-    gap: 10px;
-    flex: 1 1 45%;
-    box-sizing: border-box;
 }
 
 .header{
     font-size: 25px;
-}
-
-.contacts{
-    font-size: 20px;
-    position: relative;
-    padding-left: 150px;
-}
-
-.container{
+    padding-left: 10px;
+    height: 620px;
     display: flex;
     align-items: center;
-    height: 550px;
-    flex-wrap: wrap;
+}
+
+
+.hr1, .hr2{
+    text-align: center;
+    font-size: 25px;
+}
+
+li{
+    list-style-type: none;
+    font-size: larger;
+}
+
+.ul1{
+    display: flex;
+    gap: 2vw;
     flex: 1 1 45%;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.hr1_img{
+    width: 40vw;
+    height: 25vw;
+}
+
+.li_head{
+    font-size: 15px;
+}
+
+.ul2{
+    display: flex;
 }
