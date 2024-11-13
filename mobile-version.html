@@ -5,52 +5,60 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
-
     <style>
         html{
-    background-color: #11263d;
+    background-color: #07111c;
     color: aliceblue;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    display: flex;
-    gap: 10px;
-    flex: 1 1 45%;
-    box-sizing: border-box;
 }
 
 .header{
     font-size: 25px;
-}
-
-.contacts{
-    font-size: 20px;
-    position: relative;
-    padding-left: 150px;
-}
-
-.container{
+    padding-left: 10px;
+    height: 620px;
     display: flex;
     align-items: center;
-    height: 550px;
-    flex-wrap: wrap;
+}
+
+
+.hr1, .hr2{
+    text-align: center;
+    font-size: 25px;
+}
+
+li{
+    list-style-type: none;
+    font-size: larger;
+}
+
+.ul1{
+    display: flex;
+    gap: 2vw;
     flex: 1 1 45%;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.hr1_img{
+    width: 40vw;
+    height: 25vw;
+}
+
+.li_head{
+    font-size: 15px;
+}
+
+.ul2{
+    display: flex;
 }
     </style>
-
     <body>
         <div class="container">
         <div class="header">
         <div>
-        <h1>Hello, I am Omar Ahmed</h1>
+        <h1>Hello, I am Omar Ahmed.</h1>
         <h3>A Data Scientist</h3>
-        </div>
-        </div>
-
-        <div class="ct2">
-        <div class="contacts">
-            <ul>
-                <li class="hr3_li"><img class="hr3 img" src="" alt="Email"><p>omarfawzy046@gmail.com</p></li>
-                <li class="hr3_li"><img class="hr3 img" src="" alt="Whatsapp">/<img class="hr3 img" src="" alt="Phone"><p>+20 01210798743</p></li>
-            </ul>
+                <p class="hr3_li"><img alt="email"><b>omarfawzy046@gmail.com</b>.<img alt="whatsapp"><b>+20 01210798743</b></p>
         </div>
         </div>
         </div>
@@ -58,21 +66,21 @@
         <div class="sections">
 
         <div class="projects">
-        <h4 class="hr1">Projects:</h4>
-        <ul>
-            <li class="hr1_li"><div><p>Invistigating a movie dataset</p>
+        <h4 class="hr1">Projects</h4>
+        <ul class="ul1">
+            <li class="hr1_li"><div><p class="li_head"><b>Invistigating a movie dataset</b></p>
             <p>Here I wrangled the data, analyzed the data,answered questions and made vitualizations</p>
-            <img class="hr1_img" src="" alt="vitualizations from the project"></div></li>
+            <img class="hr1_img" src="p1.png" alt="vitualizations from the project"></div></li>
 
-            <li class="hr1_li"><p>Wrangling and analyzing WeRateDogs twitter account data</p>
+            <li class="hr1_li"><p class="li_head"><b>Wrangling and analyzing WeRateDogs twitter account data</b></p>
             <p>Here I wrangled the data, analyzed the data,answered questions and made vitualizations</p>
-            <img class="hr1_img" src="" alt="vitualizations from the project"></li>
+            <img class="hr1_img" src="p2.png" alt="vitualizations from the project"></li>
         </ul>
         </div>
 
         <div class="certificates">
             <h4 class="hr2">Certificates:</h4>
-            <ul>
+            <ul class="ul2">
                 <li class="hr2_li"><p>FreeCodeCamp Responsive Web Design Course</p>
                 <img class="hr2_img" src=""></li>
 
