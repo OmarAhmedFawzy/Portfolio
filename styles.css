@@ -2,44 +2,121 @@ html{
     background-color: #07111c;
     color: aliceblue;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1.3em;
+}
+
+body{
+    margin: 0;
+    padding: 0;
 }
 
 .header{
-    font-size: 25px;
-    padding-left: 10px;
-    height: 620px;
+   padding: 20px;
+   background-color: #131313;
+   border-bottom: 2px solid #0c2461;
+   display: flex;
+}
+
+header.header h1, header.header h3{ 
+    margin: 10px 0; 
+}
+
+h1{
+    font-size: 2.5em;
+}
+
+.name{
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    justify-content: center;
 }
 
-
-.hr1, .hr2{
-    text-align: center;
-    font-size: 25px;
+.name h1, .name h3, .name h5{
+    margin: 0;
 }
 
-li{
-    list-style-type: none;
-    font-size: larger;
-}
-
-.ul1{
+.contact{
     display: flex;
-    gap: 2vw;
-    flex: 1 1 45%;
+    flex-direction: column;
+    align-items: left;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hr3_li{
+    text-align: right;
+    justify-content: center;
+    text-align: left;
+}
+
+.hr3_li:hover{
+    transform: scale(1.1);
+}
+
+
+
+.sections{ 
+    padding: 20px;
+}
+
+.projects, .certificates{ 
+    margin-bottom: 40px
+}
+
+.projects h4, .certificates h4{
+    text-align: center; 
+    font-size: 2em; 
+    margin-bottom: 20px;
+}
+
+.ul1, .ul2{
+    list-style: none;
+    padding: 0;
+    display: flex;
     flex-wrap: wrap;
-    text-align: center;
+    justify-content: center;
+    gap: 20px;
 }
 
-.hr1_img{
-    width: 40vw;
-    height: 25vw;
+.ul1 li{
+    padding: 20px; border-radius: 10px;
+    max-width: 500px;
+    text-align: center; 
 }
 
-.li_head{
-    font-size: 15px;
+.ul2 li{
+    background: #1e272e;
+    padding: 20px; border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    text-align: center; 
 }
 
-.ul2{
-    display: flex;
+.ul1 li img, .ul2 li img{
+    width: 100%;
+    height: auto; 
+    margin-top: 10px; 
+    border-radius: 5px;
+}
+
+.ul2 li:hover{
+    background-color: #161a1d;
+}
+
+.ul1 li:hover{
+    /* transform: scale(1.2); */
+    background-color: #161a1d;
+    border-radius: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.header img{
+    max-width: 1.2em;
 }
