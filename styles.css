@@ -120,3 +120,36 @@ a {
 .header img{
     max-width: 1.2em;
 }
+
+@media (max-width: 768px){
+    .header {
+        padding: 10px;
+        flex-direction: column; /* Stack items vertically on mobile */
+        align-items: center; /* Center items on mobile */ 
+    } 
+    .name, .contact { 
+        align-items: center; 
+        text-align: center; 
+    } 
+        
+    .hr3_li { 
+        justify-content: center; 
+        text-align: center; 
+    } 
+    .ul1, .ul2 { 
+        flex-direction: column; /* Stack items vertically on mobile */ 
+        gap: 10px; 
+    } 
+    .ul1 li, .ul2 li { 
+        width: 100%; 
+        max-width: none; 
+        margin-bottom: 20px; 
+    } 
+    .hr2_li.sp { 
+        position: relative; 
+        margin: 20px auto; 
+    } 
+    .header img {
+        max-width: 1.5em; 
+    } 
+}
